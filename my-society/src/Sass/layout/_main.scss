@@ -1,0 +1,87 @@
+body {
+  background-color: $color-bg-app;
+}
+
+.atom-main-page {
+  height: 100%;
+  display: flex;
+}
+
+.atom-pages {
+  flex-direction: column;
+  margin: 20px 50px 0 120px;
+}
+
+.atom-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.atom-card_society {
+  margin: 10px;
+}
+
+.atom-banner-society .atom-title {
+  font-size: 36px;
+}
+
+.atom-president {
+  display: flex;
+  align-items: center;
+}
+
+.atom-icon_president {
+  width: 36px;
+  height: 35px;
+  background: url(../../Images/crown_sm.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.atom-president p {
+  margin: 0 0 0 10px;
+  font-family: $font-secondary;
+  font-size: 18px;
+}
+
+.atom-icon_team {
+  width: 36px;
+  height: 35px;
+  background: url(../../Images/Icons/team-01.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.atom-society .atom-banner-society ul {
+  margin-bottom: 0;
+}
+.atom-society .atom-banner-society ul.atom-featured-member li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  p {
+    margin: 0;
+  }
+}
+
+.atom-join_society {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  img {
+    width: 45%;
+  }
+}
+.atom-join_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-tertiary;
+  font-size: 34px;
+  text-align: center;
+}

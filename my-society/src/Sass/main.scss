@@ -1,0 +1,16 @@
+@import "./base/reset";
+@import "./base/typography";
+
+@import "./utils/variables";
+@import "./utils/functions";
+
+@import "./components/texts";
+@import "./components/contribution";
+@import "./components/button";
+@import "./components/score";
+@import "./components/card-lateral";
+@import "./components/menu";
+@import "./components/society";
+@import "./components/popUp";
+
+@import "./layout/main";

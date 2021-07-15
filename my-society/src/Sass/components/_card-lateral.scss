@@ -1,0 +1,57 @@
+.atom-card {
+  background-color: $color-white;
+  @include box-shadow(0px 0px 18px 0px rgba(0, 41, 158, 0.1));
+}
+
+.atom-card_profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+  img {
+    width: 140px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .atom-title {
+      margin-bottom: 0;
+    }
+    .atom-text {
+      margin-top: 3px;
+    }
+  }
+  .atom-card_subcategory {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 60px;
+    h2 {
+      font-size: 18px;
+    }
+  }
+}
+
+.atom-card_profile .atom-card_metrics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-family: $font;
+  p {
+    font-size: 14px;
+    color: $color-gray;
+  }
+  span {
+    color: $color-gray-dark;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,102 @@
+.atom-menu {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  padding-top: 20px;
+  background: rgba(243, 53, 111, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(243, 53, 111, 1) 0%,
+    rgba(130, 81, 173, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(243, 53, 111, 1)),
+    color-stop(100%, rgba(130, 81, 173, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(243, 53, 111, 1) 0%,
+    rgba(130, 81, 173, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(243, 53, 111, 1) 0%,
+    rgba(130, 81, 173, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(243, 53, 111, 1) 0%,
+    rgba(130, 81, 173, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(243, 53, 111, 1) 0%,
+    rgba(130, 81, 173, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3356f', endColorstr='#8251ad', GradientType=0 );
+}
+
+.atom-logo {
+  width: 60px;
+  height: 60px;
+  background: url(../../Images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.atom-menu_option {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  a {
+    transition: all 0.3s ease-in-out;
+  }
+  a:hover {
+    background-color: #441b1b42;
+    .atom-icon--search,
+    .atom-icon--society,
+    .atom-icon--send {
+      transform: scale(1.1);
+    }
+  }
+  a.active {
+    border-left: 5px solid #fff;
+    background-color: #e3dcdc29;
+  }
+}
+
+.atom-menu_icon {
+  width: 100%;
+  height: 38px;
+  margin: 40px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.atom-icon--society {
+  background: url(../../Images/Icons/my_society_w.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.atom-icon--search {
+  background: url(../../Images/Icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.atom-icon--send {
+  background: url(../../Images/Icons/send.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 47px;
+  height: 40px;
+}

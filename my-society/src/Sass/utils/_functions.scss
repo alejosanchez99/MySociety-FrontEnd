@@ -1,0 +1,15 @@
+@mixin button-theme(
+  $background-color,
+  $border-color,
+  $text-color: $color-white
+) {
+  background-color: $background-color;
+  border-color: $border-color;
+  color: $text-color;
+}
+
+@mixin box-shadow($box-shadow-values) {
+  -webkit-box-shadow: $box-shadow-values;
+  -moz-box-shadow: $box-shadow-values;
+  box-shadow: $box-shadow-values;
+}

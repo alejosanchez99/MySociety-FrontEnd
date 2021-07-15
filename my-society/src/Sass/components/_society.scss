@@ -1,0 +1,87 @@
+.atom-societies{
+   .atom-content-societies{
+        flex-direction: column;
+        margin: 10px 50px 0 40px;
+
+        h1{
+            margin-bottom: 0.5em;
+        }
+   
+        a.atom-link-society{
+            text-decoration: none;
+
+            .atom-card-society{
+                padding: 1em;
+                border-radius: 2em;
+                @include box-shadow(0 0 15px 0 rgba(196, 220, 235, 0.5));
+                height: 15em;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                border: 0;
+                margin-right: 0;
+                margin-left: 0;
+
+                .atom-card-society-img{
+                    height: 10em;
+
+                    img{
+                        border-radius: 2em;
+                        height: 100%;
+                    }
+                }
+                
+
+                .atom-card-body-society{
+                    padding: 0;
+
+                    .atom-title{
+                        text-decoration: none;
+                        margin-left: 0.5em;
+                        margin-top: 0.5em;
+                    }
+                }
+        }
+        &:hover{
+            .atom-card-society{
+                @include box-shadow(0 0 15px 1.5px rgba(196, 220, 235, 0.8));
+            } 
+        }
+    }
+   }
+}
+
+.atom-society{
+    .atom-banner-society{
+        img {
+            height: 12em;
+        }
+
+        .atom-title{
+            margin-right: 2em;
+            width: auto;
+        }
+
+        .atom-president {
+            display: flex;
+            align-items: center;
+        }
+
+        ul.atom-featured-member{
+            display: flex;
+            margin-block-start: 0;
+            padding-inline-start: 0;
+            
+            li{
+                list-style: none;
+                margin-right: 2em;
+            }
+        }
+    }
+}
+
+.atom-new-society{
+    textarea.form-control{
+        height: 10em;
+        resize: none;
+    }
+}
